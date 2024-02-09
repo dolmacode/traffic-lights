@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TrafficController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['controller' => TrafficController::class, 'prefix' => 'traffic'], function () {
+    Route::post('move/{color}', 'handleMove')->name('traffic.move');
 });

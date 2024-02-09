@@ -1,0 +1,96 @@
+* {
+    outline: none;
+    font-family: "Railway", "Inter", sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #e0e0e0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.traffic-lights {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.traffic-lights__wrapper, .traffic-lights__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #e0e0e0;
+    border: 1px solid #777;
+}
+
+.traffic-lights__wrapper {
+    background: #777;
+}
+
+.traffic-lights__form {
+    justify-content: space-between
+}
+
+.traffic-lights__item {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: .15;
+    border: 1px solid #777;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.active {
+    opacity: 1;
+}
+
+.button-primary {
+    padding: .8rem 2rem;
+    border: none;
+    background: #777;
+    color: #fff;
+    border-radius: .5rem;
+    transition: .1s;
+}
+
+.button-primary:hover {
+    background: #444;
+    cursor: pointer;
+}
+
+.logs {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background: #666;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.logs__item {
+    color: #fff;
+}
